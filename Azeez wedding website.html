@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding of Shaik Abdul Azeez & Rihana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(to bottom right, #fff0f6, #ffe0ec);
+      margin: 0; color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      text-align: center; padding: 2.5em 1em; color: #fff;
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em; margin-bottom: 0.3em;
+      letter-spacing: 1px;
+    }
+    h2 { color: #d63384; margin-top: 0; }
+    section {
+      padding: 2em; margin: auto; max-width: 900px;
+      background: #fff; margin-top: 1.5em;
+      border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      opacity: 0; transform: translateY(50px);
+      transition: all 0.8s ease-out;
+    }
+    section.is-in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    ul { list-style: none; padding: 0; }
+    li {
+      background: #ffeef8; padding: 1em; margin-bottom: 1em;
+      border-left: 6px solid #ff69b4; border-radius: 6px;
+    }
+    .dots-list p::before {
+      content: "• ";
+      font-size: 1.2em;
+      color: #ff5e78;
+      margin-right: 5px;
+    }
+    #countdown {
+      text-align: center;
+      background: #fff7fb;
+      margin: 2em 0;
+    }
+    #timer {
+      display: flex; justify-content: center;
+      gap: 1em; flex-wrap: wrap; margin-top: 1em;
+    }
+    #timer span {
+      background: white;
+      border: 2px solid #d63384;
+      color: #d63384;
+      padding: 1em;
+      border-radius: 12px;
+      min-width: 80px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    #timer span small {
+      display: block;
+      font-size: 0.8em;
+      font-weight: normal;
+      color: #555;
+    }
+    .map-container iframe {
+      width: 100%; height: 300px; border:0;
+      border-radius: 12px; margin-top: 1em;
+    }
+    form {
+      display: flex; flex-direction: column; gap: 12px;
+      max-width: 500px; margin: auto;
+    }
+    input, textarea, select, button {
+      padding: 12px; font-size: 1rem;
+      border-radius: 8px; border: 1px solid #ccc;
+      font-family: inherit;
+    }
+    button {
+      background: linear-gradient(to right, #ff5e78, #ff85a1);
+      color: white; border: none; font-weight: bold;
+      cursor: pointer; transition: 0.3s;
+    }
+    button:hover { background: #d63384; }
+    a.button {
+      display: inline-block;
+      background: #ff6fa5; color: white;
+      padding: 10px 20px; margin-top: 1em;
+      border-radius: 8px; text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center; padding: 1.5em; font-size: 0.9em;
+      background: #fff0f6; margin-top: 2em;
+    }
+    @media (max-width: 768px) {
+      #timer { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Shaik Abdul Azeez ❤️ Rihana</h1>
+    <p>You're Invited to Celebrate Our Special Day</p>
+    <p><strong>Valima:</strong> 10th August 2025 • <strong>Nikah:</strong> 9th August 2025</p>
+  </header>
+
+  <section id="welcome">
+    <h2>💐 Welcome</h2>
+    <p>Two hearts, one love, and a lifetime together.</p>
+    <p>We are delighted to invite you to witness and celebrate our union. Your presence will make our wedding even more special!</p>
+  </section>
+
+  <section id="countdown">
+    <h2>⏳ Countdown to Nikah</h2>
+    <div id="timer">
+      <span><div id="days">00</div><small>Days</small></span>
+      <span><div id="hours">00</div><small>Hours</small></span>
+      <span><div id="minutes">00</div><small>Minutes</small></span>
+      <span><div id="seconds">00</div><small>Seconds</small></span>
+    </div>
+  </section>
+
+  <section id="schedule">
+    <h2>🗓️ Wedding Schedule</h2>
+    <ul>
+      <li><strong>Haldi:</strong> 8th August 2025 at 7:00 PM – 📍 Anumanchipalli</li>
+      <li><strong>Nikah:</strong> 9th August 2025 at 10:30 AM – 📍 Z.P. High School, Raghunadhapalem</li>
+      <li><strong>Valima:</strong> 10th August 2025 at 7:30 PM – 📍 Anumanchipalli</li>
+    </ul>
+  </section>
+
+  <section id="family">
+    <h2>👨‍👩‍👧‍👦 Meet Our Families</h2>
+    <div class="dots-list">
+      <p><strong>Father:</strong> Shaik Khasim Saheb</p>
+      <p><strong>Mother:</strong> Bismillah</p>
+      <p><strong>Grandfather:</strong> Syed Nabi Saheb (Late)</p>
+      <p><strong>Grandmother:</strong> Lalba</p>
+      <p><strong>Brother:</strong> Siraj</p>
+      <p><strong>Brother-in-law:</strong> Sonu</p>
+      <p><strong>Sisters</strong></p>
+      <p><strong>Brothers-in-law</strong></p>
+      <p><strong>Sisters-in-law</strong></p>
+      <p><strong>Nieces & Nephews</strong></p>
+      <p><strong>Uncles & Aunts</strong></p>
+      <p><strong>Extended Relatives</strong></p>
+    </div>
+  </section>
+
+  <section id="dua">
+    <h2>🕋 Wedding Dua</h2>
+    <p>“Baarakallahu laka, wa baaraka ‘alayka, wa jama’a baynakuma fee khayr.”</p>
+    <p><em>May Allah bless your marriage and unite you both in goodness.</em></p>
+  </section>
+
+  <section id="location">
+    <h2>📍 Venue Location</h2>
+    <p><a href="https://maps.app.goo.gl/4tcMjxxPyQ2bbeYo6?g_st=aw" target="_blank">Click here to view on Google Maps</a></p>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps?q=Anumanchipalli,+Andhra+Pradesh&output=embed"
+        allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <section id="rsvp">
+    <h2>💌 RSVP</h2>
+    <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <select name="attending">
+        <option value="Yes">Yes, I'll be there</option>
+        <option value="No">Sorry, I can't</option>
+      </select>
+      <textarea name="message" placeholder="Message or Blessings..."></textarea>
+      <button type="submit">Send RSVP</button>
+    </form>
+  </section>
+
+  <section id="wishes">
+    <h2>📝 Send Your Wishes</h2>
+    <p>We would love to read your blessings, prayers, and messages!</p>
+    <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" class="button" target="_blank">Write a Wish</a>
+  </section>
+
+  <section id="album-download">
+    <h2>📥 Download Wedding Album</h2>
+    <p>The wedding photo album will be available after the event.</p>
+    <a href="https://drive.google.com/YOUR_ALBUM_LINK" class="button" target="_blank">Download Album</a>
+  </section>
+
+  <footer>
+    <p>💖 Designed with love by Shaik Siraj | Wedding of Shaik Abdul Azeez & Rihana | 2025</p>
+  </footer>
+
+  <script>
+    // Countdown Timer
+    const targetDate = new Date("2025-08-09T10:30:00").getTime();
+    const countdown = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+      const days = Math.floor(distance / (1000*60*60*24));
+      const hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+      const minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+      const seconds = Math.floor((distance % (1000*60)) / 1000);
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = hours;
+      document.getElementById("minutes").innerText = minutes;
+      document.getElementById("seconds").innerText = seconds;
+      if (distance < 0) {
+        clearInterval(countdown);
+        document.getElementById("timer").innerHTML = "<p>🎉 It’s the Big Day!</p>";
+      }
+    }, 1000);
+
+    // Scroll Animation Observer
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-in");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
